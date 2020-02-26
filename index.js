@@ -21,12 +21,21 @@ bot.on('ready', function() {
 bot.login("NTA5MzA0MjM4MDc4NDI3MTM2.XlVFVg.Jc9oVKLAXdV582GH7q_TSXSnm2k");
 
 bot.on('message', message => {
+    // Pour les Aides c'est ICI
     if (message.content === prefix + "help"){
-      message.channel.sendMessage("Liste des commandes:\n - ^help\n - ^ouin");
+      message.channel.sendMessage("Liste des commandes:\n - ^help\n - ^info_serv");
     }
-    if (message.content === "ouin") {
+    if (message.content === prefix + "info_serv"){
+      message.channel.sendMessage("Serveur de Jeu pour la LeVeLTeaM mon bro <3");
+    }
+    
+    // Pour les OUIN OUIN c'est ICI
+    if (message.content.includes("pas de badges")
+    | message.content.includes("pas corrigé")
+    | message.content.includes("pas de note") ){
       message.reply(random_salut(items_ouin));
     }
+    // Pour les Salutations c'est ICI
     if (message.content === "Salut"
     | message.content === "salut"
     | message.content === "Bonjour"
