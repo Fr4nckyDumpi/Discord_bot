@@ -5,11 +5,11 @@ const items_salut = ["Salut !",
                 "Bienvenue à toi.",
                ];
 
-var prefix = ("^")
+var prefix = ("/")
 var time = new Date();
 
 bot.on('ready', function() {
-    bot.user.setGame("Command: ^help");
+    bot.user.setGame("Command: /help");
 });
 
 bot.login("NTA5MzA0MjM4MDc4NDI3MTM2.XlVFVg.Jc9oVKLAXdV582GH7q_TSXSnm2k");
